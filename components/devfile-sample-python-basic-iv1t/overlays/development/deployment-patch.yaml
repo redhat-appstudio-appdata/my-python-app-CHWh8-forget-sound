@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-iv1t
+  namespace: bdettelb-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:cf3190ed01e0d5e8cd8ee7abfd31c366b29ecd7b43a8d13f7eac2a30b86f8237
+        name: my-python
+        resources: {}
+status: {}
